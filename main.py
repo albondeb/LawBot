@@ -8,7 +8,7 @@ class LegalAid():
     courtship_date = None
     case_number = None
     
-    def identify(self):
+    def geninfo(self):
         id = int(input("Are you 1.the applicant or 2.the respondant?\n"))
         if id == 1:
             relationto = int(input("What is your relationship to the child or children in question?\n 1.Mother \n 2.Father \n 3.Other\n>>"))
@@ -24,7 +24,7 @@ class LegalAid():
 
 def main():
     legal = LegalAid()
-    legal.identify()
+    legal.geninfo()
 
       
 if __name__ == "__main__":
